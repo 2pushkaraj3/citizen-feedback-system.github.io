@@ -1,143 +1,116 @@
-
-*
- *:before,
- *:after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- }
-
- .sec{
-    background-color: black;
-   
-    /* overflow: hidden; */
-     height: 100vh;
-     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    padding: 200px;
-
+.forotpbut{
+    border-width: 5000px;
 }
 
- .first{
-    display: grid;
-    float: top;
- background-color: #4f5289;
+.sec{
   text-align: center;
-  height: 100vh;
-  width: 100%;
-   padding: 5px 5px;
- 
- 
-  border-radius: 6px;
-   border-width: 1px 1px 3px;
-  /* overflow: hidden; */
-  
+  background-color: rgba(12, 18, 93, 255);
+  min-height: 100%;
 }
 
 
- 
- p {
-     color: rgb(169, 37, 37);
-     font-size: 21px;
-     margin-bottom: 20px;
- }
-
-
- ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: red;
-    opacity: 1; /* Firefox */
-  }
-  
-
- 
-
-  label {
-    cursor: default;
-  }
- button {
-     padding: 10px 10px;
-     color: #FFF;
-     background-color: #007100;
-     font-size: 18px;
-     border-radius: 6px;
-     width: 100%;
-     border: 1px solid #007100;
-     border-width: 3px 5px 3px;
-     margin-bottom: 10px;
- }
- .input{
-    width: 25rem;
-    height: 2rem;
-    padding: 1rem;
-    margin-left: 9rem;
-    margin-bottom: 3rem;
- }
- .logo1 {
-    -webkit-box-reflect: below 20px;
-  }
-
-/* .body_colo{
+.sec .first{
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    .first{
-        font-family: 'Nunito', sans-serif;
-        color: #384047;
-        opacity: 0.9;
-        form {
-            min-width: 300px;
-            margin-top: 80px;
-            padding: 10px 30px;
-            background: rgba(255, 255, 255, 0.3);
-            border-radius: 8px;
-            h1 {
-                margin: 0 0 10px 0;
-                text-align: center;
-                img {
-                    width: 150px;
-                    height: 190px;
-                }
-            }
-            p {
-                color: #FFF;
-                font-size: 21px;
-                margin-bottom: 20px;
-            }
-            fieldset {
-                margin-bottom: 20px;
-                border: none;
-                padding: 0;
-                text-align: start;
-                label {
-                    color: #e8eeef;
-                    font-weight: 300;
-                    padding-left: -50px;
-                    margin: 0;
-                }
-                .user_mobile{
-                    border: none;
-                    font-size: 18px;
-                    margin-bottom: 10px;
-                    padding: 15px;
-                    border-radius: 5px;
-                    background-color: #e8eeef;
-                    color: #0d0c0c;
-                    width: -webkit-fill-available;
-                }
-            }
-            button {
-                padding: 5px 5px;
-                color: #FFF;
-                background-color: #007100;
-                font-size: 18px;
-                border-radius: 6px;
-                width: 100%;
-                border: 1px solid #007100;
-                border-width: 1px 1px 3px;
-                margin-bottom: 10px;
-            }
-        }
-    } 
+}
+
+/* .sec .first .third{
+    font-family: 'Nunito', sans-serif;
+    color: #384047;
+    opacity: 0.9;
 } */
+.welcomecss{
+    color: #fff;
+}
+.thankscss{
+    color: #fff !important;
+}
+.sec .first .third{
+    min-width: 300px;
+    height: 85vh;
+    margin-top: 80px;
+    padding: 10px 30px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    overflow: visible;
+}
+
+.sec .first .third .formkacss{
+    background: none !important;
+    margin-top: 40px;
+    display: grid;
+    grid-area: auto;
+}
+
+/* .sec .first .third .secondotp{
+    min-width: 300px;
+    margin-top: 80px;
+    padding: 10px 30px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+} */
+
+
+
+
+.sec .first .third form .thank{
+    color: beige;
+    padding-bottom: 8px;
+    line-height: 1.2em;
+}
+
+.sec .first .third form fieldset{
+    line-height: 1.3em;
+    margin-left: 15px;
+}
+
+.sec .first .third form .inputformain{
+    margin-left: 3em;
+    margin-bottom: 2em;
+    padding: 0 -20px 0 20px;
+    width: 15em;
+    height: 1.4em;
+    line-height: 0.5em;
+    border-radius: 8px;
+    color: #171515;
+}
+
+.forotpbut{
+    padding: 5px 5px;
+    color: #FFF;
+    background-color: #007100;
+    font-size: 18px;
+    border-radius: 6px;
+    width: 60%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 50px;
+    border: 1px solid #007100;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+    margin-left: 32.5%;
+}
+
+/* .forotpbf{
+    padding: 5px 5px;
+    color: #FFF;
+    background-color: #007100;
+    font-size: 18px;
+    border-radius: 6px;
+    width: 60%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 50px;
+    border: 1px solid #007100;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+    margin-left: 32.5%;
+} */
+
+
+.sec .first .third form fieldset button{
+    margin-top: -30px;
+}

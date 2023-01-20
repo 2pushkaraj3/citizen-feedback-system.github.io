@@ -2,7 +2,7 @@ import logo1 from "../imgs/Gujarat_Police_Logo.png";
 
 //import { useNavigate } from "react-router-dom"; 
 
-import "./Otp.css";
+// import "./Otp.css";
 import React from "react";
 
 

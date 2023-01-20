@@ -1,23 +1,24 @@
 
 
-.startt{
+.starttfor{
     min-height: 100vh;
     display: flex;
+    background-color: rgba(12, 18, 93, 255);
     justify-content: center;
 }
-    .first{
+    .firstka{
         font-family: 'Nunito', sans-serif;
         color: #384047;
         opacity: 0.9;
     }
-        form {
-            min-width: 300px;
+        .feedform {
+            max-width: 70vh;
             margin-top: 80px;
             padding: 10px 30px;
             background: rgba(255, 255, 255, 0.3);
             border-radius: 8px;
         }
-            h1 {
+          .starttfor .feedform .heds {
                 margin: 0 0 10px 0;
                 text-align: center;
             }
@@ -84,7 +85,7 @@
                 }
             
 
-            button {
+                .forfeedbut {
                 padding: 5px 5px;
                 color: #FFF;
                 background-color: #007100;
