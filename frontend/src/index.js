@@ -23,7 +23,7 @@ export default function Index() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}/>
-        <Route path="/feedbackcitizen" element = {<Feedbackcitizen />} />
+        <Route path="/feedback" element = {<Feedbackcitizen />} />
         <Route path="/Otp" element = {<Otp />} />
         <Route path="/infopage" element = {<InfoPage/>} />
       </Routes>

@@ -3,6 +3,39 @@ const bcryptjs = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 const userSchema = new mongoose.Schema({
+
+Date: {
+    type : String,
+    required : true,
+},
+Time: {
+    type : String,
+    required : true,
+},
+// Range: {
+//     type : String,
+//     required : true,
+// },
+District: {
+    type : String,
+    required : true,
+},
+SubDvision: {
+    type : String,
+    required : true,
+},
+PoliceStation: {
+    type : String,
+    required : true,
+},
+PsCode: {
+    type : String,
+    required : true,
+},
+Mobile: {
+    type : String,
+    required : true,
+},
 Ques1: {
     type : String,
     required : true,

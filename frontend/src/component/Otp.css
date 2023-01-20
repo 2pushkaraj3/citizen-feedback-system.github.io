@@ -1,4 +1,4 @@
-
+/* 
 *
 *:before,
 *:after{
@@ -10,7 +10,7 @@
 .sec{
    background-color: black;
   
-   /* overflow: hidden; */
+   overflow: hidden; 
     height: 100vh;
     width: 100%;
    display: flex;
@@ -32,7 +32,7 @@ background-color: #4f5289;
 
  border-radius: 6px;
   border-width: 1px 1px 3px;
- /* overflow: hidden; */
+ overflow: hidden; 
  
 }
 
@@ -45,9 +45,9 @@ p {
 }
 
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder { 
    color: red;
-   opacity: 1; /* Firefox */
+   opacity: 1;
  }
  
 
@@ -76,7 +76,7 @@ button {
 }
 .logo1 {
    -webkit-box-reflect: below 20px;
- }
+ } */
 
 /* .body_colo{
    min-height: 100vh;

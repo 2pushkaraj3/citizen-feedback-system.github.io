@@ -1,22 +1,26 @@
 
 import logo from "../imgs/Gujarat_Police_Logo.png";
 
-//import { useNavigate } from "react-router-dom"; 
-
 import "./Feedbackcitizen.css";
+
 import React, { useState } from "react";
-
-
-
+// import axios from "axios"
+import { useNavigate } from "react-router-dom"; 
+import { useSearchParams } from "react-router-dom";
 
 const Feedbackcitizen = () => {
 
-  // let ques1_ans = "";
-  // let ques2_ans = "";
-  // let ques3_ans = "";
-  // let Comment = "";
-
-  //const navigate = useNavigate();
+  const [params] = useSearchParams();
+  const navigate = useNavigate();
+  const d = new Date();
+  const date = d.getDate()+"-"+(d.getMonth()+1)+"-"+d.getFullYear();
+  const time = d.getHours()+":"+d.getMinutes();
+  // const range = params.get('Range');
+  const district = params.get('District');
+  const subdivision = params.get('SubDivision');
+  const policestation = params.get('PoliceStation');
+  const code = params.get('Code');
+  const mobile = params.get('mobile');
 
   React.state = {
     Ques1: [
@@ -69,39 +73,47 @@ const Feedbackcitizen = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    console.log(date);
+    console.log(time);
+    // console.log(range);
+    console.log(district);
+    console.log(subdivision);
+    console.log(policestation);
+    console.log(code);
+    console.log(mobile);
     console.log(ques1_ans);
     console.log(ques2_ans);
     console.log(ques3_ans);
     console.log(Comment);
     try {
-      const res = await fetch('/feedbackcitizen', {
+      const res = await fetch('/feedback', {
         method : 'POST',
         headers : {
           "Content-Type" : "application/json",
         },
         body : JSON.stringify({
-          ques1_ans, ques2_ans, ques3_ans, Comment
+          date, time, district, subdivision, policestation, code, mobile, ques1_ans, ques2_ans, ques3_ans, Comment
         })
       })
 
       if(res.status === 400  || !res){
-        window.alert("Wrong hai bro");
+        window.alert("Wrong submit attempt");
       }else{
-        window.alert("Sab Sahi hai.");
-        window.location = '/infopage';
+        window.alert("Form submitted Successfully");
+        navigate('/infopage');
       }
     } catch (error) {
       console.log(error);
     }
   }
-
+ 
   return (
     <div>
-      <div className="startt">
-        <div className="first">
-          <form onSubmit={handleSubmit} method="POST">
-            <h1><img src={logo} alt="" /></h1>
-            <p>Thanks for giving feedback<br />પ્રતિસાદ આપવા બદલ આભાર</p>
+      <div className="starttfor">
+        <div className="firstka">
+          <form className ="feedform" onSubmit={handleSubmit} method="POST">
+            <h1 className="heds"><img src={logo} alt="" /></h1>
+            <p className="heds">Thanks for giving feedback {params.get('PoliceStation')}<br />પ્રતિસાદ આપવા બદલ આભાર</p>
             <fieldset>
               <div className="question">
                 <label htmlFor="name" className="quess">
@@ -125,7 +137,7 @@ const Feedbackcitizen = () => {
                   <input type="radio" name="btn-check" id="howcome3" value= {React.state.Ques1[2].a3} checked = {ques1_ans === React.state.Ques1[2].a3} onChange={handleclick1}/>
                   <label htmlFor="howcome3">
                     {/* <!-- <span></span>  --> */}
-                    <span>{React.state.Ques1[2].a3}</span>
+                    <span>{React.state.Ques1[2].a3}</span>  
                   </label><br />
                 </div>
               </div>
@@ -203,6 +215,7 @@ const Feedbackcitizen = () => {
                   </div>
                 </div>
               </div>
+              
               <label htmlFor="otpnumber">
                 <span>Comment Suggestions</span>
                 {/* <span>ટિપ્પણી સૂચનો</span> */}
@@ -210,8 +223,7 @@ const Feedbackcitizen = () => {
                <textarea type="text" name="Comment" value={Comment.Comment} onChange={handleInput} placeholder="Any Comments/Suggestions" maxLength="300"/>
             </fieldset>
             {/* <Link to="/second/feedback/infopage" style={{ textDecoration: "none" }}> */}
-              <button type="submit">Submit<br />સબમિટ કરો</button>
-
+              <button className="forfeedbut" type="submit">Submit<br />સબમિટ કરો</button>
             {/* </Link> */}
           </form> </div>
       </div>
