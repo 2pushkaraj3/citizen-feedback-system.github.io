@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/static/css/main.437d82f1.css",
+    "main.js": "/static/js/main.b7557bcb.js",
+    "static/media/Gujarat_Police_Logo.png": "/static/media/Gujarat_Police_Logo.9907431545afc91675aa.png",
+    "index.html": "/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.437d82f1.css",
+    "static/js/main.b7557bcb.js"
+  ]
+}

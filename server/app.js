@@ -9,7 +9,7 @@ const app = express();
 
 dotenv.config({path : './config.env'});
 require('./db/conn');
-const port = process.env.PORT;
+const port = process.env.PORT||5000;
 
 const Users = require('./models/userSchema');
 
@@ -62,6 +62,10 @@ app.post('/feedback',async (req, res) =>{
 // app.get('/', (req, res) => {
 //     res.send('Hello world')
 // });
+if (process.env.Node_ENV= "PRODUCCTION"){
+   app.use(exprees.static("frontend/build"));
+}
+
 
 app.listen(port, ()=>{
     console.log("Server is Running Successfully.")

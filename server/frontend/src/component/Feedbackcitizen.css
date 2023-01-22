@@ -1,0 +1,100 @@
+
+
+.starttfor{
+    min-height: 100vh;
+    display: flex;
+    background-color: rgba(12, 18, 93, 255);
+    justify-content: center;
+}
+    .firstka{
+        font-family: 'Nunito', sans-serif;
+        color: #384047;
+        opacity: 0.9;
+    }
+        .feedform {
+            max-width: 70vh;
+            margin-top: 80px;
+            padding: 10px 30px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+        }
+          .starttfor .feedform .heds {
+                margin: 0 0 10px 0;
+                text-align: center;
+            }
+                img {
+                    width: 150px;
+                    height: 190px;
+                }
+            
+            
+            p {
+                color: #FFF;
+                font-size: 21px;
+                margin-bottom: 35px;
+            }
+
+            fieldset {
+                margin-bottom: 20px;
+                border: none;
+                padding: 0;
+                text-align: start;
+            }
+                .question {
+                    font-weight: 300;
+                    padding-left: -50px;
+                    margin-bottom: 28px;
+                }
+                    .quess{
+                        color: #FFF;
+                    }
+
+                    label{
+                        font-size: 22px;
+                        color: #FFF
+                    }
+
+                    .options {
+                        padding-left: 15px;
+                    }
+
+                    .emoji{
+                        padding-left: 15px;
+                        display: flex;
+                        font-size: 35px;
+                    }
+                        input{
+                            width: 20px;
+                            height: 20px;
+                            align-self: center;
+                            font-size: 2rem;
+                        }
+                    
+                
+                
+                textarea{
+                    border: none;
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                    padding: 15px;
+                    border-radius: 5px;
+                    background-color: #e8eeef;
+                    color: #0d0c0c;
+                    width: -webkit-fill-available;
+                }
+            
+
+                .forfeedbut {
+                padding: 5px 5px;
+                color: #FFF;
+                background-color: #007100;
+                font-size: 18px;
+                border-radius: 6px;
+                width: 100%;
+                border: 1px solid #007100;
+                border-width: 1px 1px 3px;
+                margin-bottom: 10px;
+            }
+        
+    
